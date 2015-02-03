@@ -1,7 +1,17 @@
 <html>
 <body>
-  <form action = "login" method = "GET">
-    <input type = "password" name = "password">
+  <h1>Super Secret App</h1>
+  <h3>Create new user account:</h3>
+  <form action = "/user" method = "POST">
+    <input type = "text" name = "username" placeholder = "create username">
+    <input type = "password" name = "password" placeholder = "create password">
+    <input type = "password" name = "confirm_password" placeholder = "confirm password">
+    <button>add</button>
+  </form>
+  <h3>Log-in to existing user account:</h3>
+  <form action = "/session" method = "POST">
+    <input type = "text" name = "username" placeholder = "enter username">
+    <input type = "password" name = "password" placeholder = "enter password">
     <button>submit</button>
   </form>
 </body>
